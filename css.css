@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+.box1{
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px -10px 50px var(--Light-Gray);
+
+
+}
+.left-roight-box{
+    display: flex;
+    color: white;
+    height: 260px;
+
+
+}
+.leftbox{
+    width: 325px;
+    background-color: var(--Cyan);
+    padding: 30px;
+    padding-top: 40px;
+    border-bottom-left-radius: 15px;
+
+    
+}
+.rightbox{
+    width: 325px;
+    background-color:hsla(179, 62%, 43%, 0.726);
+    padding: 30px;
+    padding-top: 40px;   
+    border-bottom-right-radius: 15px;
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--Light-Gray);
+
+}
+.head{
+    padding-top: 40px;
+    font-size: 20px;
+    color: var(--Cyan);
+    font-weight: 800;
+}
+.header{
+    padding-left: 30px;
+}
+.text1{
+    color: var(--Bright-Yellow);
+    font-size: 18px;
+}
+.article{
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+}
+.Price{
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 40px;
+}
+.Price a{
+    font-size: 16px;
+    font-weight: 200;
+}
+.button{
+    background-color: var(--Bright-Yellow);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: var(--Light-Gray);
+    color: var(--Bright-Yellow);
+
+}
+.head1{
+    font-size: 18px;
+    font-weight: 700;
+}
+@media screen and (max-width:680px){
+    .left-roight-box{
+        flex-direction: column;
+        position: absolute;
+    }
+    .leftbox{
+        border-radius: 0;
+    }
+    .rightbox{
+        border-bottom-left-radius: 15px;
+    }
+    .box1{
+        width: 325px;
+    }
+    .article{
+        width: 250px;
+    }
+}
